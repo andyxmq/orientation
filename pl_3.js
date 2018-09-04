@@ -1,3 +1,7 @@
+/**
+ * pl library :　orientation detection
+ * 横竖屏检测库
+ */
 ;((function(win,pl){
   var timer,
       meta = {},
@@ -68,7 +72,11 @@
         lstr = 'landscape,'+ffstr,
         cssstr = '@media(orientation: portrait){.orientation{font-family: '+ pstr +';font-size: 30px;}} @media(orientation: landscape) {.orientation{font-family:'+lstr+'}}'
     meta.font = ffstr;
+    
+    // 注入style
     loadStyleString(cssstr);
+    
+    // html 标签添加orientation 类
     html.className = 'orientation '+html.className;
     if(hstyle['font-family'] === pstr){ //初始化判断
       meta.init = 'portrait';
