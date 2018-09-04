@@ -1,0 +1,8 @@
+html,body{
+  background: #ddd;
+}
+
+#test {
+  background: #666;
+  width: 100%;
+}

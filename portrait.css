@@ -1,0 +1,29 @@
+/* @media screen and (orientation: portrait) {
+  html,body{
+    background: yellowgreen;
+  }    
+  
+  #test {
+    background: #ccc;
+    width: 100%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  html,body{
+    background: #ddd;
+  }
+  
+  #test {
+    background: #666;
+    width: 100%;
+  }
+} */
+
+html,body {
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#test{
+  background: #aaa;
+}
